@@ -16,14 +16,14 @@ export class SignUpComponent {
 
   //voir https://angular.io/api/forms/NgForm#template-variable-references
   onSubmit(f: NgForm) {
-    console.log('User created:', this.user);
+    //console.log('User created:', this.user);
      /* 
     il est possible que le formulaire puisse être null ou undefined. Si cela se produit et que nous tentons d'accéder
     à la propriété valid d'un objet null ou undefined, cela entraînerait une erreur JavaScript (TypeError). 
      */
-    //if (f && f.valid) {
-    //  console.log('User created:', this.user);
-    // }
+    if (f && f.valid) {
+      console.log('User created:', this.user);
+    }
   }
 
 }

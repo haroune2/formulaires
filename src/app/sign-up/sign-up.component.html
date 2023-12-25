@@ -4,11 +4,15 @@
 <!-- sign-up.component.html -->
 <!--voir aussi https://angular.io/api/forms/NgForm#template-variable-references -->
 <form #signUpForm="ngForm" (ngSubmit)="onSubmit(signUpForm)">
+
+  <!--     
     <div>
       Form submitted ? {{signUpForm.submitted}}
       Form valid ? {{signUpForm.valid}}
       Form invalid ? {{signUpForm.invalid}}
     </div>
+  -->
+
   
     <!--firstname de type text qui doit être validé avec required, minlength à 3 et maxlength à 15-->
     <!--Les messages d'erreurs doivent être affichés uniquement après l'envoi du formulaire 😈  -->
